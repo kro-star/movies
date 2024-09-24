@@ -1,0 +1,13 @@
+.bg-dark-gray{
+    background-color: #212121;
+}
+nav{
+    border-radius: 40px;
+  }
+.bg-grad-dark-gray{
+    
+    background-image: linear-gradient(-60deg, #111111, #191818);
+}
+.bg-yellow-logo{
+ background-color: #d6a407;
+}

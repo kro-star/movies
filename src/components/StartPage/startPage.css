@@ -1,0 +1,13 @@
+.fs64{
+    font-size: 128px;
+}
+.font-Bodoni{
+    font-family:  "Bodoni Moda", serif;
+    font-weight: 100;
+}
+.ls-5{
+    letter-spacing: 2rem;
+}
+.hpage-100{
+    min-height: calc(100vh - 100px - 30px);
+}
