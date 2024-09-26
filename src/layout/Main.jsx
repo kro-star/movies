@@ -4,7 +4,7 @@ import {SearchPage} from '../components/SearchPage'
 import {StartPage} from '../components/StartPage/StartPage'
 import {MovieClick} from '../components/MovieClick/MovieClick'
 
-
+const API_KEY = process.env.REACT_APP_API_KEY;
 class  Main extends Component {
     
     state = {
@@ -79,7 +79,7 @@ class  Main extends Component {
     searchByID =  (e) => {
         
         
-            const query = `http://www.omdbapi.com/?apikey=11af28d6&i=${e.target.dataset.id}`;
+            const query = `http://www.omdbapi.com/?apikey=${API_KEY}&i=${e.target.dataset.id}`;
 
                 fetch(query)
                 
@@ -122,7 +122,7 @@ class  Main extends Component {
     search =  () => {
         if (this.state.totalPage >= this.state.page || this.state.finding === false){
             this.setState({finding: true})
-            const query = `http://www.omdbapi.com/?apikey=11af28d6&s=${this.state.searchText}${(this.state.typeSearch !== 'all' ? `&type=${this.state.typeSearch}` : ``)}${this.state.page === 1 ? `` : `&page=${this.state.page}`}`;
+            const query = `http://www.omdbapi.com/?apikey=${API_KEY}&s=${this.state.searchText}${(this.state.typeSearch !== 'all' ? `&type=${this.state.typeSearch}` : ``)}${this.state.page === 1 ? `` : `&page=${this.state.page}`}`;
 
                 fetch(query)
                 
