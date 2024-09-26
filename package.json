@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://kro-star.github.io/movies",
+  "env": {
+    "REACT_APP_API_KEY": "11af28d6" 
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
