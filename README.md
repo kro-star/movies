@@ -10,7 +10,7 @@ Work with the API has been implemented:
 There is work with an unsuccessful request, processing a download(preload).
 
 
-В этом проекте реализован поиск фильмов и сериалов по внешней БД https://www.omdbapi.com/
+В этом проекте реализован поиск фильмов и сериалов по внешней БД ( omdb )
 
 Вы можете посмотреть этот проект по ссылке https://kro-star.github.io/movies/
 
