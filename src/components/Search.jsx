@@ -39,7 +39,7 @@ class  Search extends Component{
             <div className="row">
                 <div className="col-lg-2 d-md-flex d-none"></div>
                 <div className="col-lg-8 col-md-12">
-                    <div className={start === true ? "input-group mb-3" : "input-group mb-3 w-80 "}>
+                    <div className={start === true ? "input-group mb-3" : "input-group mb-3 "}>
                         <input
                             placeholder="Search" 
                             id="search" 

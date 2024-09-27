@@ -21,7 +21,9 @@ function SearchPage(props){
                 
                 <>
                 <Movies id="top" key = {Date().getUTCDate} movies={props.movies} error={props.error} handleClickMovie = {props.handleClickMovie}/>
-                <a href="#top" className=" position-absolute position-top" ><img src={require('../img/top.png')} alt="" className="arrowTop"/> </a>
+                { 
+                props.movies.length > 0 ? <a href="#top" className=" position-absolute position-top" ><img src={require('../img/top.png')} alt="" className="arrowTop"/> </a>
+                : ''}
                 </>
             ) : <Preloader /> }
         {

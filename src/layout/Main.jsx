@@ -79,7 +79,7 @@ class  Main extends Component {
     searchByID =  (e) => {
         
         
-            const query = `http://www.omdbapi.com/?apikey=${API_KEY}&i=${e.target.dataset.id}`;
+            const query = `https://www.omdbapi.com/?apikey=${API_KEY}&i=${e.target.dataset.id}`;
 
                 fetch(query)
                 
@@ -122,7 +122,7 @@ class  Main extends Component {
     search =  () => {
         if (this.state.totalPage >= this.state.page || this.state.finding === false){
             this.setState({finding: true})
-            const query = `http://www.omdbapi.com/?apikey=${API_KEY}&s=${this.state.searchText}${(this.state.typeSearch !== 'all' ? `&type=${this.state.typeSearch}` : ``)}${this.state.page === 1 ? `` : `&page=${this.state.page}`}`;
+            const query = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${this.state.searchText}${(this.state.typeSearch !== 'all' ? `&type=${this.state.typeSearch}` : ``)}${this.state.page === 1 ? `` : `&page=${this.state.page}`}`;
 
                 fetch(query)
                 
