@@ -4,6 +4,7 @@ Work with the API has been implemented:
   - data requests, 
   - filtering,
    - requesting more complete information on a specific position
+     
 There is work with an unsuccessful request, processing a download(preload).
 
 
@@ -14,4 +15,5 @@ There is work with an unsuccessful request, processing a download(preload).
   - запросы данных
   -  их фильтрация,
   -  запрос на более полную информацию по конкретной позиции
+
 Так же есть обработка неудачного запроса, обработка процесса загрузки.
